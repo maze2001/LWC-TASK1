@@ -1,0 +1,85 @@
+<template>
+    <lightning-record-edit-form object-api-name="Agreement__c" onsuccess={handleSuccess}>
+    <div class="divlayout">
+    <div class="divcontainer1">
+        <div class="innercontainer1">
+            <div class="Account details">
+
+                <lightning-input-field field-name="Account__c" required variant="lookup"></lightning-input-field>
+
+            </div>
+
+            <div class="Namecontainer details">
+                <div>Agreement Name</div>
+                <input type="text" id="Name" value="">
+            
+
+            </div>
+            <div class="prddetails">
+                <div>product</div>
+                <input type="text" id="prodcutno" value="">
+
+            </div>
+            <div class="vartype">
+                <div>variabletype</div>
+                <input type="text" id="varno" value="">
+            </div>
+            <div class="rentalmeth">
+                <div>Rentalmethod</div>
+                <input type="text" id="rentm" value="">
+            </div>
+            <div class = "duemeth">
+                <div>DueDate</div>
+                <input type="text" id="duem" value="">
+            </div>
+
+            <div class="Rentalamountcontainer details">
+                <div>Rental amount</div>
+                <input type="text" id="rentalamount" value="">
+
+            </div>
+            <div class="startdatecontainer details">
+                <div>Startdate</div>
+                <input type="date" id="startdate" value="">
+
+            </div>
+            <div class="enddatecontainer details">
+                <div>Enddate</div>
+                <input type="date" id="enddate" value="">
+
+
+
+            </div>
+
+        </div>
+        <div class="innercontainer2">
+
+            <button class="innerbutton">submit</button>
+        </div>
+    </div>
+
+
+
+    <div class="divcontainer3">
+        <table>
+            <thead>
+            <tr>
+                <th>Invoice no</th>
+                <th>Startdate</th>
+                <th>Enddate</th>
+                <th>Rentalamount</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+            <tbody id="Tablecontent">
+               
+            </tbody>
+
+        </table>
+
+
+
+    </div>
+</div>
+</lightning-record-edit-form>
+</template>
